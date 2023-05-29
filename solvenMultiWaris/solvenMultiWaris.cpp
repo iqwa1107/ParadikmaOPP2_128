@@ -46,3 +46,8 @@ public:
 		cout << "budi di buat\n" << endl;
 	}
 };
+
+int main() {
+	budi a(12);
+	return 0;
+}
