@@ -20,4 +20,16 @@ public:
 	pekerja(int pUmur) :
 		orang(pUmur)
 	{}
+};
+
+class pelajaran : public orang{
+public:
+	pelajaran(int pUmur):
+		orang(pUmur)
+	{
+		cout << "pelajaran di buat\n" << endl;
+	}
+
 }
+
+
