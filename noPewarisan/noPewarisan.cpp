@@ -12,3 +12,9 @@ public:
 		cout << "Halo saya Function daru derived Class ";
 	}
 };
+int main() {
+	derivedClass a;
+	a.perkenalan();
+
+	return 0;
+}
