@@ -34,3 +34,15 @@ public:
 		cout << "pelajar di buat \n" << endl;
 	}
 };
+
+class budi : public pekerja, public pelajar 
+{
+public:
+	budi(int pUmur) :
+		pekerja(pUmur),
+		pelajar(pUmur),
+		orang(pUmur) // hal ini di lakukan juka menggunakan virtual 
+	{
+		cout << "budi di buat\n" << endl;
+	}
+};
