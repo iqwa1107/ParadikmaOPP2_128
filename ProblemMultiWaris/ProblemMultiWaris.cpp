@@ -22,14 +22,22 @@ public:
 	{}
 };
 
-class pelajaran : public orang{
+class pelajar : public orang {
 public:
-	pelajaran(int pUmur):
+	pelajar(int pUmur) :
 		orang(pUmur)
 	{
 		cout << "pelajaran di buat\n" << endl;
 	}
 
-}
+};
 
-
+class  budi : public pekerja, public pelajar {
+public:
+	budi(int pUmur) :
+		pekerja(pUmur),
+	    pelajar(pUmur)
+	{
+		cout << "Budi di buat\n" << endl;
+	}
+};
